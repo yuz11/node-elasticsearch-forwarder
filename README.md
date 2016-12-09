@@ -11,7 +11,7 @@ HTTP POST Json:
 {  
         "index": your index name in ES //MUST  
         "timestamp": your timestamp format in ES //NOT MUST,without it,Server will fill with a millisecond timestamp  
-        ...... //other filds u want.  
+        ...... //other fields u want.  
 }  
 
 # Res  
@@ -39,3 +39,4 @@ but u have relink npm/forever.Do as the follow:
         curl -XPUT "http://ur_es_host:ur_es_port/_template/t1" -d'{"template" : "*","order" : 0,"settings": {"index.refresh_interval": "1m","number_of_shards":"2"},"mappings":{"log":{"properties":{"timestamp": {"type": "date","format" : "epoch_millis"}}}}}'  
   
 * Any Comment or Question, Contact Me through : yuzyang11@foxmail.com
+* 欢迎来撩
